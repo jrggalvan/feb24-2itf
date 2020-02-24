@@ -1,18 +1,12 @@
-class Student
-{
-    constructor(name, course, section)
-    {
-        this.name = name;
-        this.course = course;
-        this.section = section;
-    }
+//Prototype
 
-    enroll(subject)
-    {
-        console.log(`${this.name}, Age ${this.course}, is currently in ${this.section}.`);
-        console.log(`She is having a concert in ${subject}.`);
-    }
-}
+let stud1 = {name:"Lee Ji Eun", age:"27", section:"Edam Entertainment", 
+            study:function(subject)
+            {
+            console.log(`${this.name} is having a concert in ${subject}.`);
+            }
+        }
+        
+let stud2 = {name:"Yoo In Na", age:"n/a", section:"actress"};
 
-let stud1 = new Student("Lee Ji Eun", 27, "Edam Entertainment");
-stud1.enroll("Manila");
+stud1.study("Manila");
